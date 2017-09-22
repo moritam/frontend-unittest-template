@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mocha Tests</title>
+<link href="/node_modules/mocha/mocha.css" rel="stylesheet" />
+</head>
+<body>
+<div id="mocha"></div>
+
+<script src="/node_modules/mocha/mocha.js"></script>
+<script src="/node_modules/chai/chai.js"></script>
+<script src="lib/jquery-3.2.1.min.js"></script>
+
+<script src="lib/config.js"></script>
+<script src="lib/plan_common.min.js"></script>
+<script src="lib/multiplan.min.js"></script>
+<script src="js/advice_validator.js"></script>
+
+<script>mocha.setup('bdd')</script>
+<script src="test/test.advice_validator.js"></script>
+<script>
+mocha.checkLeaks();
+mocha.globals(['jQuery', '*']);
+mocha.run();
+</script>
+</body>
+</html>

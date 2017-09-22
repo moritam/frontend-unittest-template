@@ -1,0 +1,19 @@
+{
+  "name": "browser-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.1.2"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "mocha": "^3.5.3"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "http-server -o"
+  },
+  "author": "",
+  "license": "ISC"
+}
